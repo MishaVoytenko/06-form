@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section">
+        <form action="">
+          <h2 class="title">Create an Account</h2>
+
+          <div class="name">
+            <div class="first-name">
+              <p class="text">First Name</p>
+              <input type="text" />
+            </div>
+            <div class="last-name">
+              <p class="text">Last Name</p>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="email">
+            <p class="text">E-mail</p>
+            <input class="email-input" type="email" />
+          </div>
+
+          <p class="text">We'll never share your email with anyone else.</p>
+          <div class="gender">
+            <label>
+              <input type="radio" name="gender"  />
+              <p>Male</p>
+            </label>
+            <label>
+              <input type="radio" name="gender" />
+              <p>Female</p>
+            </labe>
+          </div>
+
+          <div>
+            <p class="text">Country</p>
+            <input name="Country" list="Country" />
+            <datalist id="Country">
+              <option value="Ukraine" /> 
+              <option value="Canada" />
+              <option value="USA" />
+              <option value="Poland" />
+            </datalist>
+            <div>
+              <p class="text">City</p>
+              <input type="text" />
+            </div>
+          </div>
+
+          <button>Sign Up</button>
+
+          <p>
+            By clicking the 'Sign Up' button, you confirm that you accept our
+            and .
+          </p>
+
+          <hr />
+
+          <p>Have an account?</p>
+          <a href="">Log In</a>
+        </form>
+      </section>
+      <section class="section">
+        <form action="">
+          <h2 class="title">Profile</h2>
+
+          <div>
+            <img src="/image/📷 Image.jpg" alt="" />
+          </div>
+
+          <div>
+            <div>
+              <p>First Name</p>
+              <input type="text" />
+            </div>
+            <div>
+              <p>Last Name</p>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div>
+            <p>Country</p>
+            <input name="Country" list="Country" />
+            <datalist id="Country">
+              <option value="Ukraine" />
+              <option value="Canada" />
+              <option value="USA" />
+              <option value="Poland" />
+            </datalist>
+            <div>
+              <p>City</p>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div>
+            <p>Zip Code</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>Phone Number</p>
+            <input type="text" />
+          </div>
+
+          <button>Update</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
