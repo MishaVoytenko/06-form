@@ -161,9 +161,29 @@ table {
   flex-direction: column;
 }
 
+/* .first-name::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
 .last-name {
   display: flex;
   flex-direction: column;
+}
+
+.text-name {
+  width: 245px;
+  height: 38px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
 }
 
 .text {
@@ -185,4 +205,94 @@ table {
 
 .email-input {
   width: 100%;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  height: 38px;
+}
+
+.gender-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.button {
+  display: block;
+  width: 500px;
+  height: 38px;
+  margin-top: 20px;
+  width: 100%;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  font-family: "Roboto", "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.text-address {
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  width: 245px;
+  height: 38px;
+}
+
+.text-footer {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 22px;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.class1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.class2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #545454;
+}
+
+.class3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #007bff;
 }

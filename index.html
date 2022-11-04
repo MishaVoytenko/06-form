@@ -20,61 +20,71 @@
           <h2 class="title">Create an Account</h2>
 
           <div class="name">
-            <div class="first-name">
-              <p class="text">First Name</p>
-              <input type="text" />
-            </div>
-            <div class="last-name">
+            <label class="first-name">
+              <p for="name" class="text">First Name</p>
+              <input id="name" class="text-name" type="text" />
+            </label>
+            <label class="last-name">
               <p class="text">Last Name</p>
-              <input type="text" />
-            </div>
+              <input class="text-name" type="text" />
+            </label>
           </div>
 
-          <div class="email">
+          <label class="email">
             <p class="text">E-mail</p>
             <input class="email-input" type="email" />
-          </div>
+          </label>
 
           <p class="text">We'll never share your email with anyone else.</p>
           <div class="gender">
-            <label>
-              <input type="radio" name="gender"  />
-              <p>Male</p>
-            </label>
-            <label>
+            <label class="gender-selection">
               <input type="radio" name="gender" />
-              <p>Female</p>
-            </labe>
+              <p class="text-gender">Male</p>
+            </label>
+            <label class="gender-selection">
+              <input type="radio" name="gender" />
+              <p class="text-gender">Female</p>
+            </label>
           </div>
 
-          <div>
-            <p class="text">Country</p>
-            <input name="Country" list="Country" />
-            <datalist id="Country">
-              <option value="Ukraine" /> 
-              <option value="Canada" />
-              <option value="USA" />
-              <option value="Poland" />
-            </datalist>
-            <div>
+          <div class="address">
+            <label>
+              <p class="text">Country</p>
+              <input
+                class="text-address"
+                name="Country"
+                list="Country"
+                placeholder="Select"
+              />
+              <datalist id="Country">
+                <option value="Ukraine" />
+                <option value="Canada" />
+                <option value="USA" />
+                <option value="Poland" />
+              </datalist>
+            </label>
+
+            <label>
               <p class="text">City</p>
-              <input type="text" />
-            </div>
+              <input class="text-address" type="text" />
+            </label>
           </div>
 
-          <button>Sign Up</button>
+          <button class="button">Sign Up</button>
 
-          <p>
+          <p class="text-footer">
             By clicking the 'Sign Up' button, you confirm that you accept our
-            and .
+            <br />
+            <span> <a class="span" href="">Terms of Use</a> </span> and
+            <span> <a class="span" href="">TPrivacy Policy</a> </span>.
           </p>
-
-          <hr />
-
-          <p>Have an account?</p>
-          <a href="">Log In</a>
+          <div class="class1">
+            <p class="class2">Have an account?</p>
+            <span> <a class="class3" href="">Log In</a></span>
+          </div>
         </form>
       </section>
+
       <section class="section">
         <form action="">
           <h2 class="title">Profile</h2>
