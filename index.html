@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="style.css" />
     <title>form</title>
   </head>
+
   <body>
     <main class="main">
       <section class="section">
-        <form action="">
+        <form class="account" action="">
           <h2 class="title">Create an Account</h2>
 
           <div class="name">
@@ -72,7 +73,7 @@
 
           <button class="button">Sign Up</button>
 
-          <p class="text-footer">
+          <p class="text-footer light">
             By clicking the 'Sign Up' button, you confirm that you accept our
             <br />
             <span> <a class="span" href="">Terms of Use</a> </span> and
@@ -89,46 +90,55 @@
         <form action="">
           <h2 class="title">Profile</h2>
 
-          <div>
-            <img src="/image/📷 Image.jpg" alt="" />
-          </div>
-
-          <div>
-            <div>
-              <p>First Name</p>
-              <input type="text" />
+          <div class="load">
+            <img class="img" src="/image/📷 Image.jpg" alt="" />
+            <div class="load-file">
+              <input class="file" type="file" />
+              <p>Up to 1 MB (300x300 px)</p>
             </div>
-            <div>
-              <p>Last Name</p>
-              <input type="text" />
-            </div>
+            <button class="delete"><img src="/image/del.jpg" alt="" /></button>
           </div>
 
-          <div>
-            <p>Country</p>
-            <input name="Country" list="Country" />
-            <datalist id="Country">
-              <option value="Ukraine" />
-              <option value="Canada" />
-              <option value="USA" />
-              <option value="Poland" />
-            </datalist>
-            <div>
-              <p>City</p>
-              <input type="text" />
-            </div>
+          <div class="name">
+            <label class="first-name">
+              <p class="text">First Name</p>
+              <input class="text-name" type="text" />
+            </label>
+            <label class="first-name">
+              <p class="text">e-mail</p>
+              <input class="text-name" type="text" />
+            </label>
           </div>
 
-          <div>
-            <p>Zip Code</p>
-            <input type="text" />
-          </div>
-          <div>
-            <p>Phone Number</p>
-            <input type="text" />
+          <div class="name">
+            <label for="">
+              <p class="text">Country</p>
+              <input class="text-name" name="Country" list="Country" />
+              <datalist id="Country">
+                <option value="Ukraine" />
+                <option value="Canada" />
+                <option value="USA" />
+                <option value="Poland" />
+              </datalist>
+            </label>
+            <label>
+              <p class="text">City</p>
+              <input class="text-name" type="text" />
+            </label>
           </div>
 
-          <button>Update</button>
+          <div class="name">
+            <label>
+              <p class="text">Zip Code</p>
+              <input class="text-name" type="text" />
+            </label>
+            <label>
+              <p class="text">Phone Number</p>
+              <input class="text-name" type="text" />
+            </label>
+          </div>
+
+          <button class="update">Update</button>
         </form>
       </section>
     </main>

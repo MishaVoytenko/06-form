@@ -161,17 +161,6 @@ table {
   flex-direction: column;
 }
 
-/* .first-name::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-color: red;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-} */
-
 .last-name {
   display: flex;
   flex-direction: column;
@@ -296,3 +285,68 @@ table {
   line-height: 22px;
   color: #007bff;
 }
+
+.update {
+  margin-top: 20px;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  width: 150px;
+  height: 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.load {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.load-file {
+  margin-top: 30px;
+}
+.img {
+  width: 80px;
+  height: 80px;
+}
+
+.file {
+  width: 138px;
+  height: 30px;
+}
+
+.delete {
+  height: 30px;
+  width: 30px;
+  margin-top: 30px;
+}
+
+.text-name:focus {
+  outline: 3px solid #39c;
+}
+
+.email-input:focus {
+  outline: 3px solid #39c;
+}
+
+.text-address:focus {
+  outline: 3px solid #39c;
+}
+
+/* .first-name::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
