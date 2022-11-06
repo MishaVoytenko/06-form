@@ -302,6 +302,23 @@ table {
   color: #ffffff;
 }
 
+.load-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.load-img::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  display: block;
+  background-image: url(/image/Camera.png);
+  position: absolute;
+  bottom: 26px;
+  right: 4px;
+}
+
 .load {
   margin: 20px;
   display: flex;
@@ -311,21 +328,39 @@ table {
 
 .load-file {
   margin-top: 30px;
+  width: 150px;
+  height: 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
 }
+
+.load-text {
+  display: block;
+  margin-top: 38px;
+  font-family: "Roboto", "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #969696;
+}
+
 .img {
   width: 80px;
   height: 80px;
 }
 
 .file {
-  width: 138px;
-  height: 30px;
+  display: none;
 }
 
 .delete {
   height: 30px;
   width: 30px;
   margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  padding: 6px;
 }
 
 .text-name:focus {
